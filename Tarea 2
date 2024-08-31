@@ -1,0 +1,26 @@
+LD B, 0x12   
+    LD C, 0x34  
+
+    LD A, B     
+    DAA          
+    LD B, A    
+
+    LD A, C  
+    DAA 
+    LD C, A  
+
+    LD D, B 
+    LD E, C 
+
+    LD A, D          
+    ADD A, E        
+    DAA              
+
+    LD H, A          
+    LD A, L          
+    LD L, A          
+    LD A, H          
+
+    HALT             
+
+END: JP END
